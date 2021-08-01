@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body class = "order-body">
+    <div id = "wrapper">
+        <form onSubmit="WriteToFile()">
+            <!-- form method = "post" action = "submit.php" id = "order-pg" -->
+            <label for = "name">Name</label>
+            <input type = "text" name = "name" id = "order-name" placeholder = "name" required> <br><br>
+
+            <label for = "phone">Number</label>
+            <input type = "tel" name = "phone" id = "order-phone" placeholder = "number" required><br><br>
+
+            <label for = "order-time">Order Time</label>
+            <input type = "time" name = "order-time" id = "order-time" placeholder = "order time" required><br><br>
+
+            
+
+            <label for= "meat">Meat Type:</label>
+            <input type = "radio" name = "meat" id = "order-goat"/> Goat
+
+            <input type = "radio" name = "meat" id = "order-Beef"/> Beef
+
+            <input type = "radio" name = "meat" id = "order-Chicken"/> Chicken<br> <br>
+
+            <label for = "type">Type:</label>
+            <select name = "type" id = "type">
+                <option>None</option>
+                <option>Leg</option>
+                <option>Breast</option>
+                <option>Thigh</option>
+                <option>Whole</option>
+                <option>Feet</option>
+                <option>Shank</option>
+                <option>Grounded</option>
+            </select> <br><br>
+
+            <label for = "text">Enter Order by Typing</label>
+            <textarea name = "text" id = "text"></textarea> <br><br><br>
+            
+            <label for = "arrival-time">Expected Arrival</label>
+            <input type = "time" name = "arrival-time" id = "arrival-time" placeholder = "arrival time" required><br><br>
+
+            <!-- <button type="submit" name = "submit">Submit</button> -->
+            <input type="submit" name = "submit" value = "submit">
+
+
+
+
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+
