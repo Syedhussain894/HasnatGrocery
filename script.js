@@ -12,6 +12,7 @@ let toggleClick = function(){
         getbody.style.opacity = "0.85";
         
         getSidebarUl.style.visibility = "visible";
+        getSidebar.style.visibility = "visible";
         getSidebar.style.width = "200px";
 
         
@@ -37,6 +38,7 @@ let toggleClick = function(){
             getSidebarLinks[i].style.opacity = "0";
         }
         getSidebarUl.style.visibility = "hidden";
+        getSidebar.style.visibility = "hidden";
 
         toggleNav = false;
 
