@@ -97,15 +97,14 @@ html {
 
 .sidebar {
   position: fixed;
-  left: 0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
   width: 40px;
   padding: 0 5px;
   height: calc(100vh - 60px);
   background-color: black;
-  transition: all 0.3s ease-in-out;
-  visibility: hidden;
   z-index: 1000;
+  transition: all 0.3s ease-in-out;
 }
 
 .sidebar ul {
@@ -307,16 +306,16 @@ html {
   text-align: right;
 }
 #qurbani-text {
-  margin-left: 150px;
+  margin-left: 90px;
   color: blue;
   font-size: 50px;
+  text-align: center;
 }
 #qurbani-text {
   animation-name: qurbani;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
-  position: absolute;
-  text-align: center;
+  position: relative;
   transition: ease;
 }
 @keyframes qurbani {
@@ -324,10 +323,17 @@ html {
     left: 0px;
     color: red;
   }
-
+  25% {
+    left: 50px;
+    color: purple;
+  }
   50% {
-    left: 300px;
+    left: 0px;
     color: green;
+  }
+  75% {
+    left: -50px;
+    color: red;
   }
 
   100% {
@@ -337,8 +343,6 @@ html {
 }
 .meat-info {
   text-align: center;
-  position: relative;
-  top: 100px;
 }
 
 .contact-info {
